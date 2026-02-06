@@ -24,7 +24,7 @@ func Load() *Config {
 		DBName:     getEnv("DB_NAME", "social_network"),
 		DBSSLMode:  getEnv("DB_SSLMODE", "disable"),
 		JWTSecret:  getEnv("JWT_SECRET", "super-secret-key-change-me"),
-		ServerPort: getEnv("SERVER_PORT", "8080"),
+		ServerPort: getEnv("PORT", getEnv("SERVER_PORT", "8080")),
 	}
 }
 
