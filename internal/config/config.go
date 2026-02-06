@@ -38,7 +38,7 @@ func (c *Config) DSN() string {
 		" sslmode=" + c.DBSSLMode
 }
 
-// getEnv — получить значение ENV или вернуть значение по умолчанию
+// DSN возвращает строку подключения к PostgreSQL
 func getEnv(key, fallback string) string {
 	if val := os.Getenv(key); val != "" {
 		return val
