@@ -142,4 +142,4 @@ social-network/
 
 ## Лицензия
 
-MIT
+Само собой-MIT
